@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+.container .logoCard {
+  padding: 30px;
+  width: 50%;
+  line-height: 40px;
+}
+
+.container .logoCard .logo {
+  color: #0866ff;
+  font-size: 5em;
+}
+
+.container .logoCard .desc {
+  color: #202225;
+  font-size: 2em;
+  font-weight: 400;
+  margin-top: -20px;
+}
+
+.container .formCard {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .formCard .card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 10px 3px 10px rgba(255, 255, 255, 0.3);
+}
+
+.card .form-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .form-control {
+  padding: 20px 24px;
+  width: 30vw;
+  font-size: 1.1em;
+  margin: 10px;
+  border: 2px solid #eee;
+  outline: none;
+  border-radius: 5px;
+}
+
+.card .loginBtn {
+  background-color: #0866ff;
+  color: #fff;
+  border: none;
+  width: 30vw;
+  padding: 12px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.formCard .link {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.link a {
+  text-decoration: none;
+}
+
+.line {
+  border: 1px solid #eee;
+}
+
+.reg {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reg .regBtn {
+  background-color: #42b72a;
+  border: none;
+  color: #fff;
+  padding: 12px 16px;
+  font-size: 1.2em;
+  border-radius: 4px;
+}
+
+.formCard p {
+  color: #202225;
+  margin-top: 30px;
+}
+
+.formCard p a {
+  color: #202225;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: block;
+    width: 100%;
+  }
+
+  .container .logoCard,
+  .container .formCard {
+    width: 100%;
+  }
+
+  .card .form-control {
+    width: 70vw;
+  }
+}
